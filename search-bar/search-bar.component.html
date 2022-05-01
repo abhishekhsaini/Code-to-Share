@@ -1,0 +1,15 @@
+<p>search-bar works!</p>
+<h1>hey</h1>
+<div class="content-center">
+    <div class="card">
+        <i class="fa fa-file-zip-o fa-4x"></i>
+        
+        <ol>
+            <li *ngFor="let url of urls">
+                {{url.split('/')[url.split('/').length - 1]}}
+            </li>
+        </ol>
+
+        <button (click)="downloadAsZip()">Download as Zip</button>
+    </div>
+</div>
